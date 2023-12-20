@@ -10,3 +10,5 @@ RUN apk add --update --no-cache autoconf g++ imagemagick imagemagick-dev libtool
 
 #Install composer
 RUN wget https://getcomposer.org/composer-stable.phar -O /usr/local/bin/composer && chmod +x /usr/local/bin/composer
+
+WORKDIR /var/www
